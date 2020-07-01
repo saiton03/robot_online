@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ricochet Robots Online</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/public/css/game.css">
+    </head>
+    <body style="width:100%;height:100%;margin:0;">
+        <div id="userName" hidden><%-name %></div>
+        <div id="userId" hidden><%-id %></div>
+        <div class="wrapper">
+            <canvas id="board" style="width:100%;height:100%;object-fit:contain;"></canvas>
+            
+            <canvas id="player" style="width:100%;height:100%;object-fit:contain;"></canvas>
+            <canvas id="score" style="width:100%;height:100%;object-fit:contain;"></canvas>
+            <canvas id="wallTip" style="width:100%;height:100%;object-fit:contain;"></canvas>
+            <canvas id="robot" style="width:100%;height:100%;object-fit:contain;"></canvas>
+        </div>
+        <script src="/public/script/cli.js"></script>
+    </body>
+</html>

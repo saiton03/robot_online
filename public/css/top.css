@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.centering {
+  width: 100%;
+  text-align: center;
+}
+
+.marquee-anim{
+  padding: .5em 0;
+  margin: 0 auto;
+  width: 30%;
+  overflow: hidden;
+}
+
+.marquee-str {
+    width: 100%;
+    white-space: nowrap;
+
+    animation-name: marquee;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes marquee {
+    from    { transform: translate(75%); }
+    100%,to { transform: translate(-75%); }
+}
+
+.errors{
+  color: #ff0000;
+}
+
